@@ -8,8 +8,8 @@
  * @copyright Copyright (c) 2022
  * 很简单的一个算法：同样也是分两种情况，1. b == 0，那么x = 1, y = 0;
  * 2. b != 0, exgcd(b, a % b, y, x)
- * gcd(b, a % b) = a * x + b * (y - a / b * b) = gcd(a, b);
- * 所以y = y - a / b * b;
+ * gcd(b, a % b) = a * x + b * (y - a / b * x) = gcd(a, b);
+ * 所以y = y - a / b * x;
  * ps：记得return value
  */
 #include<iostream>
