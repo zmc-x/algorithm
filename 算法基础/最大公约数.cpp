@@ -5,7 +5,7 @@
     对于a mod b = r1 = a - (a / b) * b；所以其实也是一个a与b的线性组合；
     所以d | a mod b
     故：gcd(a, b) = gcd(a, a mod b)；
-    从而存在递归：b ? gcd(max(a, b), max(a, b) % min(a, b)) : a;
+    从而存在递归：b ? gcd(min(a, b), max(a, b) % min(a, b)) : a;
 */
 #include<iostream>
 #include<algorithm>
